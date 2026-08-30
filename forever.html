@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Проходка навсегда — SPELLBOUND</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600;700;800;900&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#fff;background:#05030c;font-family:Rubik,sans-serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 20%,#5c1bb5 0,transparent 32%),radial-gradient(circle at 10% 75%,#123c8d 0,transparent 30%),linear-gradient(135deg,#020207,#10051d 55%,#03020a)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;opacity:.14;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:32px 32px}
+.top{height:76px;position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:#030207b8;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff12}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font:12px "Press Start 2P",monospace;text-shadow:0 0 18px #a64cff}
+.brand img{width:45px;height:45px;border-radius:50%;border:2px solid #a953ff;object-fit:cover}
+.status{font-size:13px;font-weight:700;color:#bdb2c9}.dot{display:inline-block;width:9px;height:9px;background:#62ff9b;box-shadow:0 0 13px #62ff9b;margin-right:8px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 70px;position:relative}
+.hero-content{max-width:900px}.logo{width:205px;height:205px;border-radius:50%;padding:6px;object-fit:cover;background:linear-gradient(135deg,#c05aff,#315cff);box-shadow:0 0 45px #8b3dff66;animation:float 4s ease-in-out infinite}
+.eyebrow{font:10px "Press Start 2P",monospace;letter-spacing:2px;color:#c893ff;margin:28px 0 14px}
+h1{font:42px "Press Start 2P",monospace;line-height:1.25;margin:0 0 20px;text-shadow:5px 5px #16072d,0 0 30px #9b4cff66}h1 span,h2 span{color:#b54cff}
+.lead{font-size:18px;line-height:1.7;color:#c5bbd0;max-width:650px;margin:0 auto 34px}
+.buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 25px;color:#fff;text-decoration:none;border:2px solid #ffffff25;box-shadow:inset 0 -5px #0004,0 10px 30px #0007;font:10px "Press Start 2P",monospace;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-4px);filter:brightness(1.15)}.purple{background:linear-gradient(135deg,#9a40ff,#5232db)}.blue{background:linear-gradient(135deg,#173b9b,#5429a5)}
+.section{padding:100px 20px 120px;background:linear-gradient(#05030c00,#05030cf5 8%)}.wrap{max-width:1100px;margin:auto;text-align:center}
+h2{font:26px "Press Start 2P",monospace;line-height:1.5;margin:0 0 12px;text-shadow:4px 4px #16072d}.muted{color:#a99caf;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:30px 20px 22px;background:linear-gradient(145deg,#251044dd,#08050fd9);border:2px solid #a052ff55;box-shadow:inset 0 0 35px #963cff0d,0 15px 45px #0008;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;position:relative;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px),0 8px)}
+.card:hover{border-color:#a95aff;transform:translateY(-6px)}.rune{font:25px "Press Start 2P";color:#d49cff;text-shadow:0 0 20px #9d4cff}.card h3{font-size:17px;margin:12px 0}.card p{color:#a99faf;line-height:1.5;font-size:14px}.card .btn{width:100%;min-height:48px;font-size:8px}.popular{position:absolute;top:0;left:0;right:0;padding:8px;background:linear-gradient(90deg,#7434e8,#b14cff);font:7px "Press Start 2P"}
+footer{padding:25px;text-align:center;color:#71677b;border-top:1px solid #fff1;background:#020207}footer a{color:#b77cff}
+.purchase{min-height:100vh;display:grid;place-items:center;padding:110px 20px 60px}.purchase-box{width:min(650px,100%);text-align:center;padding:50px 35px;background:linear-gradient(145deg,#261048ee,#08040feF);border:2px solid #a653ff77;box-shadow:0 0 70px #8b3dff25}.purchase-icon{width:125px;height:125px;border-radius:50%;object-fit:cover;border:3px solid #a653ff;box-shadow:0 0 30px #8b3dff66}.purchase-box h1{font-size:25px;margin-top:25px}.price{font-size:24px;font-weight:900;color:#d19aff;margin:25px 0}.note{color:#9d91a8;line-height:1.7;margin-bottom:30px}.back{display:inline-block;margin-top:18px;color:#a987c5;text-decoration:none;font-size:13px}.back:hover{color:#fff}
+@keyframes float{50%{transform:translateY(-10px)}}@media(max-width:850px){.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.status{display:none}.brand{font-size:9px}.brand img{width:37px;height:37px}.logo{width:150px;height:150px}h1{font-size:27px}.lead{font-size:15px}.buttons{flex-direction:column}.btn{width:min(360px,100%)}.cards{grid-template-columns:1fr}.card{min-height:260px}.purchase-box{padding:35px 20px}}
+</style></head><body>
+<header class="top"><a class="brand" href="index.html"><img src="server-icon.png">SPELLBOUND</a><div class="status"><span class="dot"></span>Сервер онлайн</div></header>
+
+<main class="purchase"><div class="purchase-box">
+<img class="purchase-icon" src="server-icon.png" alt="SPELLBOUND">
+<div class="eyebrow">SPELLBOUND · ПОКУПКА</div>
+<h1>Проходка навсегда</h1>
+<div class="price">Цена уточняется</div>
+<p class="note">Постоянный доступ к серверу SPELLBOUND без ограничения по сроку.<br><br><strong>Срок:</strong> Навсегда</p>
+<a class="btn purple" href="https://discord.gg/2kvT7vgyEd" target="_blank">Оформить в Discord</a>
+<br><a class="back" href="passes.html">← Вернуться к выбору проходки</a>
+</div></main>
+
+<footer>⚔ SPELLBOUND © 2026 · <a href="https://discord.gg/2kvT7vgyEd" target="_blank">Discord</a></footer>
+</body></html>
